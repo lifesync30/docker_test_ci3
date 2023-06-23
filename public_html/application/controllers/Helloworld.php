@@ -14,8 +14,8 @@ class Helloworld extends CI_Controller {
     }
 
     function getData(){
-        $data = $this->db->select('User.*')
-                        ->from('User')
+        $data = $this->db->select('users.*')
+                        ->from('users')
                         ->order_by('id', 'ASC')
                         ->get()
                         ->result_array();
